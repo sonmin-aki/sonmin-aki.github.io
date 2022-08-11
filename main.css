@@ -37,6 +37,10 @@ input {
 	padding: 0;
 }
 
+a {
+	color: #5f7fbf;
+}
+
 *, ::after, ::before {
 	box-sizing: border-box;
 }
