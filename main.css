@@ -1,0 +1,105 @@
+body {
+	background-color: #202427;
+	margin: 0;
+}
+
+h1 {
+	line-height: 1.2;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 1rem;
+	border: 1px solid #454d55;
+	background-color: #343a40;
+}
+
+thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #454d55;
+}
+
+tbody tr th {
+	border: 1px solid #454d55;
+	border-right: 2px solid #454d55;
+}
+
+td {
+	padding: 0.3rem;
+	border: 1px solid #454d55;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	background-color: #282d31;
+	box-sizing: border-box;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col100, .col33, .col67 {
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.col100 {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.col33 {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+}
+
+.col67 {
+	flex: 0 0 66.666667%;
+	max-width: 66.666667%;
+}
+
+.ghost-match {
+	background-color: #009310;
+}
+
+.evidence-omit {
+	color: #303030;
+}
+
+.ghost-match.nightmare-omit {
+	background-color: #344a40;
+}
+
+.ghost-match.nightmare-omit .nightmare-evidence {
+	background-color: #543a40;
+}
