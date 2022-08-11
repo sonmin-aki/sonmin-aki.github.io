@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="../main.css">
 	<title>PhasmoAssist</title>
 </head>
 <body>
@@ -18,13 +18,13 @@
 				<table class="text-center">
 					<thead>
 						<tr>
-							<th colspan="2">Evidence</th>
+							<th colspan="2">証拠</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr id="row-evidence-dots">
 							<td>
-								<label>DOTS Projector</label>
+								<label>DOTSプロジェクター</label>
 							</td>
 							<td>
 								<input type="checkbox" name="check-dots" id="check-dots" value="dots">
@@ -32,7 +32,7 @@
 						</tr>
 						<tr id="row-evidence-emf">
 							<td>
-								<label>EMF Level 5</label>
+								<label>EMFレベル5</label>
 							</td>
 							<td>
 								<input type="checkbox" name="check-emf" id="check-emf" value="emf">
@@ -40,7 +40,7 @@
 						</tr>
 						<tr id="row-evidence-fingerprint">
 							<td>
-								<label>Fingerprint</label>
+								<label>指紋</label>
 							</td>
 							<td>
 								<input type="checkbox" name="check-fingerprint" id="check-fingerprint" value="fingerprint">
@@ -48,7 +48,7 @@
 						</tr>
 						<tr id="row-evidence-freeze">
 							<td>
-								<label>Freezing Temperature</label>
+								<label>氷点下の温度</label>
 							</td>
 							<td>
 								<input type="checkbox" name="check-freeze" id="check-freeze" value="freeze">
@@ -56,7 +56,7 @@
 						</tr>
 						<tr id="row-evidence-orbs">
 							<td>
-								<label>Ghost Orbs</label>
+								<label>ゴーストオーブ</label>
 							</td>
 							<td>
 								<input type="checkbox" name="check-orbs" id="check-orbs" value="orbs">
@@ -64,7 +64,7 @@
 						</tr>
 						<tr id="row-evidence-writing">
 							<td>
-								<label>Ghost Writing</label>
+								<label>ゴーストライティング</label>
 							</td>
 							<td>
 								<input type="checkbox" name="check-writing" id="check-writing" value="writing">
@@ -72,7 +72,7 @@
 						</tr>
 						<tr id="row-evidence-spirit">
 							<td>
-								<label>Spirit Box</label>
+								<label>スピリットボックス</label>
 							</td>
 							<td>
 								<input type="checkbox" name="check-spirit" id="check-spirit" value="spirit">
@@ -80,7 +80,7 @@
 						</tr>
 						<tr>
 							<td colspan="2">
-								<button id="evidence-clear">Clear</button>
+								<button id="evidence-clear">クリア</button>
 							</td>
 						</tr>
 					</tbody>
@@ -88,13 +88,13 @@
 				<table class="text-center">
 					<thead>
 						<tr>
-							<th colspan="2">Game Mode</th>
+							<th colspan="2">ゲームモード</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<label>Nightmare</label>
+								<label>ナイトメア</label>
 							</td>
 							<td>
 								<input type="checkbox" name="mode-nightmare" id="mode-nightmare" value="mode-nightmare">
@@ -105,13 +105,13 @@
 				<table class="text-center">
 					<thead>
 						<tr>
-							<th>Language</th>
+							<th>他言語</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<a href="./jp/">日本語</a>
+								<a href="../">English</a>
 							</td>
 						</tr>
 					</tbody>
@@ -121,12 +121,12 @@
 				<table class="text-center" id="ghost-table">
 					<thead>
 						<tr>
-							<th colspan="8">Ghosts</th>
+							<th colspan="8">ゴースト</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr id="row-banshee">
-							<th scope="row">Banshee</th>
+							<th scope="row">バンシー</th>
 							<td class="col-dots">DOTS</td>
 							<td class="col-empty"></td>
 							<td class="col-fingerprint">Fing</td>
@@ -136,7 +136,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-demon">
-							<th scope="row">Demon</th>
+							<th scope="row">デーモン</th>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
 							<td class="col-fingerprint">Fing</td>
@@ -146,7 +146,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-deogen">
-							<th scope="row">Deogen</th>
+							<th scope="row">デオヘン</th>
 							<td class="col-dots">DOTS</td>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
@@ -156,7 +156,7 @@
 							<td class="col-spirit nightmare-evidence">Spir</td>
 						</tr>
 						<tr id="row-goryo">
-							<th scope="row">Goryo</th>
+							<th scope="row">御霊</th>
 							<td class="col-dots nightmare-evidence">DOTS</td>
 							<td class="col-emf">EMF5</td>
 							<td class="col-fingerprint">Fing</td>
@@ -166,7 +166,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-hantu">
-							<th scope="row">Hantu</th>
+							<th scope="row">ハントゥ</th>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
 							<td class="col-fingerprint">Fing</td>
@@ -176,7 +176,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-jinn">
-							<th scope="row">Jinn</th>
+							<th scope="row">ジン</th>
 							<td class="col-empty"></td>
 							<td class="col-emf">EMF5</td>
 							<td class="col-fingerprint">Fing</td>
@@ -186,7 +186,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-mare">
-							<th scope="row">Mare</th>
+							<th scope="row">メアー</th>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
@@ -196,7 +196,7 @@
 							<td class="col-spirit">Spir</td>
 						</tr>
 						<tr id="row-moroi">
-							<th scope="row">Moroi</th>
+							<th scope="row">モーロイ</th>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
@@ -206,7 +206,7 @@
 							<td class="col-spirit">Spir</td>
 						</tr>
 						<tr id="row-myling">
-							<th scope="row">Myling</th>
+							<th scope="row">マイリング</th>
 							<td class="col-empty"></td>
 							<td class="col-emf">EMF5</td>
 							<td class="col-fingerprint">Fing</td>
@@ -216,7 +216,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-obake">
-							<th scope="row">Obake</th>
+							<th scope="row">化け狐</th>
 							<td class="col-empty"></td>
 							<td class="col-emf">EMF5</td>
 							<td class="col-fingerprint nightmare-evidence">Fing</td>
@@ -226,7 +226,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-oni">
-							<th scope="row">Oni</th>
+							<th scope="row">鬼</th>
 							<td class="col-dots">DOTS</td>
 							<td class="col-emf">EMF5</td>
 							<td class="col-empty"></td>
@@ -236,7 +236,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-onryo">
-							<th scope="row">Onryo</th>
+							<th scope="row">怨霊</th>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
@@ -246,7 +246,7 @@
 							<td class="col-spirit">Spir</td>
 						</tr>
 						<tr id="row-phantom">
-							<th scope="row">Phantom</th>
+							<th scope="row">ファントム</th>
 							<td class="col-dots">DOTS</td>
 							<td class="col-empty"></td>
 							<td class="col-fingerprint">Fing</td>
@@ -256,7 +256,7 @@
 							<td class="col-spirit">Spir</td>
 						</tr>
 						<tr id="row-poltergeist">
-							<th scope="row">Poltergeist</th>
+							<th scope="row">ポルターガイスト</th>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
 							<td class="col-fingerprint">Fing</td>
@@ -266,7 +266,7 @@
 							<td class="col-spirit">Spir</td>
 						</tr>
 						<tr id="row-revenant">
-							<th scope="row">Revenant</th>
+							<th scope="row">レヴナント</th>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
@@ -276,7 +276,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-raiju">
-							<th scope="row">Raiju</th>
+							<th scope="row">雷獣</th>
 							<td class="col-dots">DOTS</td>
 							<td class="col-emf">EMF5</td>
 							<td class="col-empty"></td>
@@ -286,7 +286,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-shade">
-							<th scope="row">Shade</th>
+							<th scope="row">シェード</th>
 							<td class="col-empty"></td>
 							<td class="col-emf">EMF5</td>
 							<td class="col-empty"></td>
@@ -296,7 +296,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-spirit">
-							<th scope="row">Spirit</th>
+							<th scope="row">スピリット</th>
 							<td class="col-empty"></td>
 							<td class="col-emf">EMF5</td>
 							<td class="col-empty"></td>
@@ -306,7 +306,7 @@
 							<td class="col-spirit">Spir</td>
 						</tr>
 						<tr id="row-thaye">
-							<th scope="row">Thaye</th>
+							<th scope="row">セーイ</th>
 							<td class="col-dots">DOTS</td>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
@@ -316,7 +316,7 @@
 							<td class="col-empty"></td>
 						</tr>
 						<tr id="row-mimic">
-							<th scope="row">The Mimic</th>
+							<th scope="row">ミミック</th>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
 							<td class="col-fingerprint">Fing</td>
@@ -326,7 +326,7 @@
 							<td class="col-spirit">Spir</td>
 						</tr>
 						<tr id="row-twins">
-							<th scope="row">The Twins</th>
+							<th scope="row">ツインズ</th>
 							<td class="col-empty"></td>
 							<td class="col-emf">EMF5</td>
 							<td class="col-empty"></td>
@@ -336,7 +336,7 @@
 							<td class="col-spirit">Spir</td>
 						</tr>
 						<tr id="row-wraith">
-							<th scope="row">Wraith</th>
+							<th scope="row">レイス</th>
 							<td class="col-dots">DOTS</td>
 							<td class="col-emf">EMF5</td>
 							<td class="col-empty"></td>
@@ -346,7 +346,7 @@
 							<td class="col-spirit">Spir</td>
 						</tr>
 						<tr id="row-yokai">
-							<th scope="row">Yokai</th>
+							<th scope="row">妖怪</th>
 							<td class="col-dots">DOTS</td>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
@@ -356,7 +356,7 @@
 							<td class="col-spirit">Spir</td>
 						</tr>
 						<tr id="row-yurei">
-							<th scope="row">Yurei</th>
+							<th scope="row">幽霊</th>
 							<td class="col-dots">DOTS</td>
 							<td class="col-empty"></td>
 							<td class="col-empty"></td>
@@ -386,6 +386,6 @@
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="../main.js"></script>
 </body>
 </html>
