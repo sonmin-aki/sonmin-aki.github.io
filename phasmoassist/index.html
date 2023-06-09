@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<title>PhasmoAssist</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col100">
+				<h1 class="text-center">PhasmoAssist</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col33">
+				<table class="text-center">
+					<thead>
+						<tr>
+							<th colspan="2">Evidence</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="row-evidence-dots">
+							<td>
+								<label>DOTS Projector</label>
+							</td>
+							<td>
+								<input type="checkbox" name="check-dots" id="check-dots" value="dots">
+							</td>
+						</tr>
+						<tr id="row-evidence-emf">
+							<td>
+								<label>EMF Level 5</label>
+							</td>
+							<td>
+								<input type="checkbox" name="check-emf" id="check-emf" value="emf">
+							</td>
+						</tr>
+						<tr id="row-evidence-fingerprint">
+							<td>
+								<label>Fingerprint</label>
+							</td>
+							<td>
+								<input type="checkbox" name="check-fingerprint" id="check-fingerprint" value="fingerprint">
+							</td>
+						</tr>
+						<tr id="row-evidence-freeze">
+							<td>
+								<label>Freezing Temperature</label>
+							</td>
+							<td>
+								<input type="checkbox" name="check-freeze" id="check-freeze" value="freeze">
+							</td>
+						</tr>
+						<tr id="row-evidence-orbs">
+							<td>
+								<label>Ghost Orbs</label>
+							</td>
+							<td>
+								<input type="checkbox" name="check-orbs" id="check-orbs" value="orbs">
+							</td>
+						</tr>
+						<tr id="row-evidence-writing">
+							<td>
+								<label>Ghost Writing</label>
+							</td>
+							<td>
+								<input type="checkbox" name="check-writing" id="check-writing" value="writing">
+							</td>
+						</tr>
+						<tr id="row-evidence-spirit">
+							<td>
+								<label>Spirit Box</label>
+							</td>
+							<td>
+								<input type="checkbox" name="check-spirit" id="check-spirit" value="spirit">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<button id="evidence-clear">Clear</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="text-center">
+					<thead>
+						<tr>
+							<th colspan="2">Game Mode</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<label>Nightmare</label>
+							</td>
+							<td>
+								<input type="checkbox" name="mode-nightmare" id="mode-nightmare" value="mode-nightmare">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="text-center">
+					<thead>
+						<tr>
+							<th>Language</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a href="./jp/">日本語</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col67">
+				<table class="text-center" id="ghost-table">
+					<thead>
+						<tr>
+							<th colspan="8">Ghosts</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="row-banshee">
+							<th scope="row">Banshee</th>
+							<td class="col-dots">DOTS</td>
+							<td class="col-empty"></td>
+							<td class="col-fingerprint">Fing</td>
+							<td class="col-empty"></td>
+							<td class="col-orbs">Orbs</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-demon">
+							<th scope="row">Demon</th>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-fingerprint">Fing</td>
+							<td class="col-freeze">Frez</td>
+							<td class="col-empty"></td>
+							<td class="col-writing">Writ</td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-deogen">
+							<th scope="row">Deogen</th>
+							<td class="col-dots">DOTS</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-writing">Writ</td>
+							<td class="col-spirit nightmare-evidence">Spir</td>
+						</tr>
+						<tr id="row-goryo">
+							<th scope="row">Goryo</th>
+							<td class="col-dots nightmare-evidence">DOTS</td>
+							<td class="col-emf">EMF5</td>
+							<td class="col-fingerprint">Fing</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-hantu">
+							<th scope="row">Hantu</th>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-fingerprint">Fing</td>
+							<td class="col-freeze nightmare-evidence">Frez</td>
+							<td class="col-orbs">Orbs</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-jinn">
+							<th scope="row">Jinn</th>
+							<td class="col-empty"></td>
+							<td class="col-emf">EMF5</td>
+							<td class="col-fingerprint">Fing</td>
+							<td class="col-freeze">Frez</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-mare">
+							<th scope="row">Mare</th>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-orbs">Orbs</td>
+							<td class="col-writing">Writ</td>
+							<td class="col-spirit">Spir</td>
+						</tr>
+						<tr id="row-moroi">
+							<th scope="row">Moroi</th>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-freeze">Frez</td>
+							<td class="col-empty"></td>
+							<td class="col-writing">Writ</td>
+							<td class="col-spirit">Spir</td>
+						</tr>
+						<tr id="row-myling">
+							<th scope="row">Myling</th>
+							<td class="col-empty"></td>
+							<td class="col-emf">EMF5</td>
+							<td class="col-fingerprint">Fing</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-writing">Writ</td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-obake">
+							<th scope="row">Obake</th>
+							<td class="col-empty"></td>
+							<td class="col-emf">EMF5</td>
+							<td class="col-fingerprint nightmare-evidence">Fing</td>
+							<td class="col-empty"></td>
+							<td class="col-orbs">Orbs</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-oni">
+							<th scope="row">Oni</th>
+							<td class="col-dots">DOTS</td>
+							<td class="col-emf">EMF5</td>
+							<td class="col-empty"></td>
+							<td class="col-freeze">Frez</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-onryo">
+							<th scope="row">Onryo</th>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-freeze">Frez</td>
+							<td class="col-orbs">Orbs</td>
+							<td class="col-empty"></td>
+							<td class="col-spirit">Spir</td>
+						</tr>
+						<tr id="row-phantom">
+							<th scope="row">Phantom</th>
+							<td class="col-dots">DOTS</td>
+							<td class="col-empty"></td>
+							<td class="col-fingerprint">Fing</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-spirit">Spir</td>
+						</tr>
+						<tr id="row-poltergeist">
+							<th scope="row">Poltergeist</th>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-fingerprint">Fing</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-writing">Writ</td>
+							<td class="col-spirit">Spir</td>
+						</tr>
+						<tr id="row-revenant">
+							<th scope="row">Revenant</th>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-freeze">Frez</td>
+							<td class="col-orbs">Orbs</td>
+							<td class="col-writing">Writ</td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-raiju">
+							<th scope="row">Raiju</th>
+							<td class="col-dots">DOTS</td>
+							<td class="col-emf">EMF5</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-orbs">Orbs</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-shade">
+							<th scope="row">Shade</th>
+							<td class="col-empty"></td>
+							<td class="col-emf">EMF5</td>
+							<td class="col-empty"></td>
+							<td class="col-freeze">Frez</td>
+							<td class="col-empty"></td>
+							<td class="col-writing">Writ</td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-spirit">
+							<th scope="row">Spirit</th>
+							<td class="col-empty"></td>
+							<td class="col-emf">EMF5</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-writing">Writ</td>
+							<td class="col-spirit">Spir</td>
+						</tr>
+						<tr id="row-thaye">
+							<th scope="row">Thaye</th>
+							<td class="col-dots">DOTS</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-orbs">Orbs</td>
+							<td class="col-writing">Writ</td>
+							<td class="col-empty"></td>
+						</tr>
+						<tr id="row-mimic">
+							<th scope="row">The Mimic</th>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-fingerprint">Fing</td>
+							<td class="col-freeze">Frez</td>
+							<td class="col-orbs">(Orbs)</td>
+							<td class="col-empty"></td>
+							<td class="col-spirit">Spir</td>
+						</tr>
+						<tr id="row-twins">
+							<th scope="row">The Twins</th>
+							<td class="col-empty"></td>
+							<td class="col-emf">EMF5</td>
+							<td class="col-empty"></td>
+							<td class="col-freeze">Frez</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-spirit">Spir</td>
+						</tr>
+						<tr id="row-wraith">
+							<th scope="row">Wraith</th>
+							<td class="col-dots">DOTS</td>
+							<td class="col-emf">EMF5</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-spirit">Spir</td>
+						</tr>
+						<tr id="row-yokai">
+							<th scope="row">Yokai</th>
+							<td class="col-dots">DOTS</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-orbs">Orbs</td>
+							<td class="col-empty"></td>
+							<td class="col-spirit">Spir</td>
+						</tr>
+						<tr id="row-yurei">
+							<th scope="row">Yurei</th>
+							<td class="col-dots">DOTS</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+							<td class="col-freeze">Frez</td>
+							<td class="col-orbs">Orbs</td>
+							<td class="col-empty"></td>
+							<td class="col-empty"></td>
+						</tr>
+						<!--
+							This is a template row for new ghost.
+								<tr id="row-ghostname">
+									<th scope="row">Ghost Name</th>
+									<td class="col-dots">DOTS</td>
+									<td class="col-emf">EMF5</td>
+									<td class="col-fingerprint">Fing</td>
+									<td class="col-freeze">Frez</td>
+									<td class="col-orbs">Orbs</td>
+									<td class="col-writing">Writ</td>
+									<td class="col-spirit">Spir</td>
+								</tr>
+							Replace unused evidence with the code below.
+								<td class="col-empty"></td>
+						-->
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
