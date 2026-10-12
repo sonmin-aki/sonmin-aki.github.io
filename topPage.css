@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--background: #eff7ff;
+	--border: 1px solid #9f9faf;
+	--card: white;
+	--shadow: 0 5px 20px #0000003f;
+
+	font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+	width: 80%;
+	max-width: 1200px;
+	min-height: 100vh;
+	min-height: 100dvh;
+	margin: 0 auto;
+	background-color: var(--background);
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	padding: 10px 0;
+	border-bottom: var(--border);
+	margin-bottom: 10px;
+	display: flex;
+}
+
+main {
+	flex: 1;
+}
+
+.site-icon {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.title-zone {
+	padding-left: 10px;
+	border-left: var(--border);
+	margin: 5px 0 5px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.title-zone .title {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.title-zone .subtitle {
+	font-size: 12px;
+}
+
+.apps {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+	gap: 10px;
+}
+
+.app-card {
+	display: flex;
+	padding: 10px;
+	border: var(--border);
+	border-radius: 20px;
+	box-shadow: var(--shadow);
+	background-color: var(--card);
+}
+
+.emoji-icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	line-height: 61px;
+	font-size: 60px;
+}
+
+.abandoned {
+	display: inline-block;
+	padding: 2px 5px;
+	border-radius: 9999px;
+	font-size: 12px;
+	font-weight: 600;
+	vertical-align: middle;
+	background-color: #cfcfcf;
+	color: #3f3f3f;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+}
+
+.button {
+	display: block;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: #4f9dff;
+	color: white;
+	text-decoration: none;
+	text-wrap: nowrap;
+	transition: background-color .3s;
+}
+
+.button:hover {
+	background-color: #6fadff;
+}
+
+footer {
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+	color: #8f8f9f;
+}
